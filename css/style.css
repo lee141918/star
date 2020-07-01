@@ -1,0 +1,493 @@
+.inner{max-width:1280px;min-width:1024px;margin:0 auto;}
+h2{font-size:1.875rem;}
+h3{font-size:1rem;}
+
+
+#header{}
+#wrap{
+  width: 100%;
+  min-width: 1024px;
+  overflow: hidden;
+}
+
+.slider {
+    width: 100%; min-width: 1024px;
+    margin: 100px auto;
+    padding: 0;
+}
+
+.slick-slide {
+  margin: 0px 
+}
+
+
+.slick-slide img {
+  width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+
+
+.slick-current {
+  opacity: 1;
+}
+
+.popup{width:100%; min-width:1024px; display: block; overflow: hidden;}
+.popup img{width:2000px; position: relative; left: calc(50% - 1000px);}
+.sitemap_div{width:100%; min-width:1024px;}
+.site_full{
+  position:fixed;
+  top:0;left:0;
+  height:100%;
+  width:100%;
+  background:linear-gradient(135deg, #f6e6b4 0%,#ed9017 100%);
+  position: fixed; top: 0; right: 0; z-index: 10; display: none;
+  z-index:999999;
+  display: none;
+ }
+.site_full .depth1 ul{color: #fff; font-size: 15px; display: block; line-height: 30px;}
+.sitemap_close{ font-size: 3rem; position: absolute; top: 20px; right: 30px;}
+
+/*********************header****************************/
+
+#header:after{clear: both;}
+#header .inner{position: relative;}
+#header .logo {
+  width: 200px;
+  float:left;
+  margin-top: 50px;}
+#header .logo img {width:100%}
+
+#header .header_top{width:calc(100% - 250px);
+                  float:left;
+                  text-align: right;
+                  margin-top: 30px;
+                }
+#header .sitemap {margin-left: 10px; }                
+#header .language {
+                   display: inline-block;
+                   position: relative;
+                   width:100px;
+                   height: 25px;
+                   text-align: center;
+                   border: 1px solid #333;}
+#header .language ul{position:absolute;
+                    top:5px;left:5px;
+                    text-align: left;
+                    }
+#header .language ul li{width: 8rem;}
+#header .korean{
+  float: left;
+  padding-left: 10px;
+  line-height: 2rem;
+  background: none;
+  font-size: 1rem;
+}
+#header .language .arrow_d{
+  float: right;
+  padding-top: 5px;
+  padding-right: 5px;
+}
+
+.popup_open{cursor: pointer; float: right; margin-left: 15px; 
+            padding-top: 5px; display: block;}
+
+.sub_con{display: none; margin-top: 25px;}
+
+#header #nav{width:calc(100% - 250px);float:left;
+             position: relative;} 
+#header #nav .depth1 > li {float:left; padding-left:50px;}
+#header #nav .depth1 > li > a {
+             display: block;
+             line-height: 60px;}
+#header #nav .depth1 > li > a{ display: block; line-height: 20px;}
+#header #nav .depth1 > li {float: left; padding-left:40px; margin-top: 20px;}
+#header #nav .depth1 > li:hover ul{display: block;}
+#header #nav .depth1 ul{background-color:rgba(0,0,0,0.5);
+                        width: 100%; padding: 10px 0; 
+                        z-index: 9999;
+                        position:absolute; left: 0; top:43px; display: none;}
+#header #nav .depth1 ul li{display: inline-block; padding: 0 30px;
+                           background: url(../) no-repeat;}
+#header #nav .depth1 ul a {color: #ffffff;}
+#header #nav .depth1 ul li:last-child{background: none;}
+
+#header #nav .depth2 > li{margin-bottom: 2rem; display: none;}
+/*********************section****************************/
+
+#section1{
+  width: 100%;
+  position: relative;
+  margin-bottom: 150px;
+}
+/*
+.notice{width:100%; height:50px; overflow:hidden; background-color:#fff;}*/
+
+#section1 .inner{position: relative;}
+#section1 .no_box{position: absolute; width: 100%;
+  bottom: 104px;
+  left: 0;}
+
+#notice{
+  float: left;
+  width: 35%;
+  height: 50px;
+  overflow:hidden;
+  background-color: #303030;
+  opacity: 0.5;
+}       
+#notice2{
+  float: right;
+  width: 35%;
+  height: 50px;
+  overflow:hidden;
+  background-color: #303030;
+  opacity: 0.5;
+}  
+
+.stop{width:100%; line-height:50px; margin-left: 10px; color:#fff; font-weight: 600;} 
+.rolling{position:relative; width:100%; height:auto; color:#fff; }
+.rolling li{margin-left: 150px; width:100%; height:50px; line-height:50px;}
+
+#section2{clear: both;
+margin-bottom: 150px;}
+
+#section2 .sec2_box{
+  text-align: center;
+}
+#section2 .sec2_box h5{
+  font-size: 1.5rem;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+#section2 .sec2_box img{
+  width: 160px;
+  height: 140px;
+  margin-bottom: 5%;
+}
+#section2 .inner div{
+            position: relative;
+            float:left;
+            width:33.333%;
+            border-top: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            box-sizing: border-box;
+            padding-bottom: 100px;}
+#section2 .inner div:last-child{
+            border-right: 1px solid #ccc;
+}
+#section2 .inner div a{
+    display:block;
+    padding-top: 50px;
+    height:320px;
+    box-sizing:border-box;
+}
+#section2 .text_on{display: none;/* transition:0.5s; opacity:0 부드러운 효과 */}
+#section2 div a:hover .text_on{
+  display: block;/* opacity:1 애는 자리차지해서 margin을 쓴 것 처럼되서 조심해서 쓰자*/
+}
+#section2 div a:hover .text_off, #section2 div a:hover .img_off{
+  display: none;
+}
+   
+#section2 .inner div :before{
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 0%;
+  height: 0%;
+
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transition: 0s;}
+
+
+#section2 .inner div a:hover:before,
+#section2 .inner div a:focus:before{
+   border-color: #efba49;
+   width: 100%;
+   height: 100%; 
+   transition: width .4s, height 0.4s 0.4s;
+}
+
+
+#section2 .inner div :after{
+  content: '';
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 0%;
+  height: 0%;
+
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transition: 0s;}
+
+
+#section2 .inner div a:hover:after,
+#section2 .inner div a:focus:after{
+   border-color: #efba49;
+   width: 100%;
+   height: 100%; 
+   transition: width .4s, height 0.4s 0.4s;
+}
+
+#section2 .inner h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#section2 .inner h3{
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+
+#section3{
+    clear: both;
+    padding-top: 200px;
+    padding-bottom: 150px;}
+
+#section3 .inner h2{
+      text-align: center;
+      margin-bottom: 20px;
+    }
+#section3 .inner h3{
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+#section4{
+  clear: both;
+  padding: 10px 0;}
+
+#section4 .inner h2{
+    margin-bottom: 20px;
+  }
+
+
+#section4 .sec4_tit{
+  float: left;
+  width: 250px;
+  height: 365px;
+  background-color: #0f0;}/*퍼센트와 픽셀을 같이 써도 된다.*/
+ 
+.sec4_tit img {width: 280px;
+              height: 400px;}
+  
+.sec4_slide{
+  margin-left: 300px;
+  position: relative;
+  top:-356px;
+  width: calc(100% - 240px);
+  float: left;
+ }
+
+#section5 {position: relative; margin-bottom: 150px;}
+#section5 h2{position: absolute; top: 750px; left: 880px;
+  text-align: center;
+  margin-bottom: 20px;}
+#section5 .movie img{width: 100%;}
+
+#section6{
+  float: left;
+  width: 100%;
+  padding-bottom: 150px;
+}
+
+#section6 .inner h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+#section6 .inner h3{
+  text-align: center;
+  margin-bottom: 30px;
+}
+#section6 .sec6_box{
+  text-align: center;
+  height: 300px;
+  line-height: 30px;
+} 
+
+#section6 .sec6_box p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+#section6 .sec6_box span{
+  font-size: 14px;
+}
+
+#section6 .sec6_box1{
+  position: relative;
+  float:left;
+  width:31%;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding-bottom: 100px;
+ }
+#section6 .sec6_box1 img{
+  width: 100%;
+}
+#section6 .sec6_box2{
+  position: relative;
+  float:left;
+  width:31%;
+  margin-right: 20px;
+  border: 1px solid #ccc;
+  padding-bottom: 100px;
+}
+#section6 .sec6_box2 img{
+  width: 100%;
+}
+#section6 .sec6_box3{
+  position: relative;
+  float:left;
+  width:31%;
+  border: 1px solid #ccc;
+  padding-bottom: 100px;
+  
+}
+#section6 .sec6_box3 img{
+  width: 100%;
+}
+
+
+/*********************footer****************************/
+
+#footer{position: relative;
+  float: left;
+  height: 300px;
+  background-color: #363636;
+  width: 100%;
+}
+.foot_info{
+  line-height: 30px; color: #fff;
+  margin-top: 30px; font-size: 12px;}
+.info_left{
+  margin-top: 30px;
+  color: #c0c0c0;
+  font-size: 12px;}
+
+.deco_right{position: absolute;
+  top: 150px; left: 1200px;
+  opacity: 30%;}  
+
+/******************슬라이드********************/
+
+
+
+.slick-arrow{
+  position: absolute;
+  top:40%;
+  width: 64px; 
+  height: 64px;
+  background: none;
+  display: block;
+  text-indent: -999999999999px;
+  z-index: 99999;}
+.slick-prev{
+  left: 50px;
+  background-image: url(../images/arrow_l.png);
+} 
+.slick-next{
+  background-image: url(../images/arrow_r.png);
+  right: 50px;
+} 
+.slick-dots{position: absolute;
+            bottom:-20px;
+            width: 100%;
+            text-align: center;
+          }
+
+.slick-dots li{
+  display: inline-block;
+ margin-left: 20px;
+ 
+  }
+
+.slick-dots li button{
+    display: block;
+    text-indent: -9999999px;
+    width: 40px;
+    height: 5px;
+    border: none;
+    background-color: #505050;
+    color: #fff;
+}
+
+.slick-dots li.slick-active button{
+   color: #fff;
+}
+
+.slick-dots li button::before{
+      content: ''; display: block;
+      width: 0; height: 100%;
+      background-color: #efba49; 
+}
+
+.slick-dots li.slick-active button::before{
+      width: 100%; 
+      transition: 0.5s;
+}/* width와 transition을 사용해서 버튼의 색깔을 변하게 만들 수 있다. */
+
+.regular .slick-slide {
+     width: 100%;
+     margin: 0 10px;
+     z-index: 99999999999;
+}
+
+.regular .slick-arrow{
+
+  width: 64px; 
+  height: 64px;
+  background: none;
+  display: block;
+  text-indent: -999999999999px;}
+
+.regular div{z-index: 99999;} 
+  
+.regular .slick-prev{
+    left: -60px;
+    background-image: url(../images/arrow_l.png);
+    z-index: 999999;
+  } 
+.regular .slick-next{
+    background-image: url(../images/arrow_r.png);
+    right: -60px;
+    z-index: 999999;
+  } 
+
+
+.regular .slick-slide img{
+  width: 100%; 
+}
+
+
+.regular2 .slick-slide {
+  width: 100%;
+  margin: 0 22px;
+}
+
+.regular2 .slick-arrow{
+  position: absolute;
+  top:-80px;
+  z-index:9999;
+  width:64px;
+  height:64px;
+  display:block;
+  text-indent:-9999px;}
+.regular2 .slick-prev{left:0;background-image: url(../images/arrow_l.png);}
+.regular2 .slick-next{left:100px; right:auto;background-image: url(../images/arrow_r.png);}
+/* !important(제이쿼리, css 다 이기는 태그지만 가급적 사용하지 않도록 하자) */
+
+
+
